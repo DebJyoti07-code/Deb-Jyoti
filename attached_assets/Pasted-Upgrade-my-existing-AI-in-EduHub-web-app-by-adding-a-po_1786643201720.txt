@@ -1,0 +1,126 @@
+Upgrade my existing AI in EduHub web app by adding a polished Reward System + Animated Progress Dashboard. Do NOT remove or break any existing features, pages, UI, data, or functionality. Integrate these features naturally into the existing design.
+
+1. Smart Reward / Streak System
+
+Create a reward system that motivates students to maintain consistency.
+
+- Track daily learning activity automatically.
+- Add a 3-day learning streak reward.
+- When a student completes their learning goals for 3 consecutive days, unlock a small visual reward.
+- Example rewards:
+  - Unlock a new motivational wallpaper/background.
+  - Make dashboard icons more colourful.
+  - Unlock a new theme/accent style.
+  - Add a small achievement badge.
+  - Add a subtle celebration animation.
+- Show the current streak clearly, such as:
+  🔥 3 Day Streak
+- Show the next reward:
+  "1 more day to unlock a new theme!"
+- After claiming/unlocking a reward, show a beautiful small success animation.
+- Do not make rewards childish; keep them modern, clean and suitable for college students.
+
+2. Reward Levels
+
+Create progressive milestones:
+
+- 3 Days → Unlock Wallpaper
+- 7 Days → Unlock Colourful Icon Theme
+- 14 Days → Unlock New Dashboard Theme
+- 30 Days → Unlock Special Achievement Badge
+
+Make the system expandable so more rewards can easily be added later.
+
+3. Animated Progress Graph
+
+Upgrade the existing progress graph/dashboard.
+
+- Add an attractive weekly learning progress graph.
+- Show progress for each day.
+- Use smooth animated line/bar transitions when the graph loads.
+- Animate the graph gradually instead of displaying everything instantly.
+- Add hover/tap interactions showing exact values.
+- Use a modern colourful gradient-style visual design.
+- Keep the graph clean and readable.
+- Add a small summary above the graph:
+  - Weekly Progress %
+  - Total Study Time
+  - Tasks Completed
+  - Current Streak
+
+4. Gamified Progress
+
+Add a visual progress indicator such as:
+
+Weekly Goal
+████████░░ 80%
+
+When the student reaches 100%, trigger a subtle celebration animation and unlock a small reward.
+
+5. Micro Animations
+
+Add smooth animations throughout the reward/progress section:
+
+- Progress bar animation
+- Graph entrance animation
+- Reward unlock animation
+- Badge pop animation
+- Icon hover animation
+- Smooth number/count-up animation
+- Subtle confetti effect only when an important reward is unlocked
+
+Keep animations smooth and lightweight. Avoid excessive animations.
+
+6. Reward Collection UI
+
+Create a "My Rewards" section where students can see:
+
+- Locked rewards
+- Unlocked rewards
+- Current streak
+- Next milestone
+- Reward history
+
+Locked rewards should appear slightly muted with a lock icon. Unlocked rewards should look colourful and active.
+
+7. Important UX Requirement
+
+The reward system should feel like a real student productivity system, not a children's game.
+
+Use:
+
+- Modern cards
+- Rounded corners
+- Soft shadows
+- Clean typography
+- Attractive gradients
+- Smooth transitions
+- Consistent spacing
+- Responsive design for mobile and desktop
+
+8. Data Persistence
+
+Make sure streaks, progress, unlocked rewards, and selected themes persist after refreshing the page.
+
+If the project already has a database/local storage/state management system, integrate with the existing system instead of creating an unnecessary duplicate system.
+
+9. Existing Project Safety
+
+IMPORTANT:
+
+- Do not redesign the entire application.
+- Do not remove existing features.
+- Do not change existing routes unnecessarily.
+- Reuse the existing components and styling wherever possible.
+- Make the new Reward + Progress system feel like it was originally part of the application.
+- Ensure the app remains fully responsive and functional.
+
+Finally, test the complete flow:
+
+Day 1 → progress recorded
+Day 2 → streak continues
+Day 3 → reward unlocked
+Reward → user can claim/select it
+7 days → next reward unlocked
+Progress graph → updates automatically
+Page refresh → all progress and rewards remain saved.

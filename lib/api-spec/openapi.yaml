@@ -1,0 +1,125 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: ai
+    description: AI-powered learning tools
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /ai/summarize:
+    post:
+      operationId: createAiSummary
+      tags: [ai]
+      summary: Summarize study material
+      description: Generates a structured student-friendly summary using the server-side AI provider configuration.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AiSummaryInput"
+      responses:
+        "200":
+          description: Generated summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AiSummary"
+        "400":
+          description: Invalid study material
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "503":
+          description: AI provider is not configured
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+        "502":
+          description: AI provider request failed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        code:
+          type: string
+      required:
+        - error
+    AiSummaryInput:
+      type: object
+      properties:
+        material:
+          type: string
+          minLength: 40
+          maxLength: 30000
+      required:
+        - material
+    AiImportantTerm:
+      type: object
+      properties:
+        term:
+          type: string
+        explanation:
+          type: string
+      required:
+        - term
+        - explanation
+    AiSummary:
+      type: object
+      properties:
+        shortSummary:
+          type: string
+        keyPoints:
+          type: array
+          items:
+            type: string
+        importantTerms:
+          type: array
+          items:
+            $ref: "#/components/schemas/AiImportantTerm"
+        quickRevisionPoints:
+          type: array
+          items:
+            type: string
+      required:
+        - shortSummary
+        - keyPoints
+        - importantTerms
+        - quickRevisionPoints
+

@@ -1,0 +1,84 @@
+Build a complete modern responsive AI-powered EdTech web app called "AI-Mavericks".
+
+PROJECT PURPOSE:
+This is a personal study companion for school and college students. It helps students plan, organize, focus on and improve their studies.
+
+CORE PROBLEM:
+Students struggle with study planning, managing tasks, understanding large study materials, staying focused, organizing notes, staying motivated and identifying weak topics.
+
+CORE SOLUTION:
+The app should help students PLAN → STUDY → FOCUS → ANALYZE → IMPROVE.
+
+TARGET USERS:
+School and college students.
+
+Create a polished dashboard-based web app with these sections:
+
+1. Dashboard
+- Today's study tasks
+- Study progress
+- Quick access to major features
+- Friendly student-focused design
+
+2. Study Planner
+- Add subject, topic, date, priority and estimated study time
+- Daily and weekly views
+- Edit/delete tasks
+- Mark tasks completed
+- Show pending/completed progress
+- Persist data after refresh
+
+3. To-Do List
+- Add, edit, delete and complete tasks
+- Show pending and completed tasks
+
+4. Sticky Notes
+- Create, edit, pin and delete notes
+- Title + content
+- Save notes after refresh
+
+5. Motivation Corner
+- Short positive study motivation messages
+- "New Motivation" button
+
+6. Important Contacts
+- Save name, role and phone number
+- Add/edit/delete contacts
+- Keep contacts private
+- Add call action where supported
+
+7. Pomodoro Focus Timer
+- Default 25-minute study session and 5-minute break
+- Start, pause, resume and reset
+- Custom study/break duration
+- Session counter
+
+8. Mindful Music
+- Calm study/ambient music player
+- Play, pause and volume controls
+- Never autoplay
+
+9. Light/Dark Mode
+- Theme toggle
+- Apply consistently throughout the app
+- Remember selected theme after refresh
+
+DESIGN:
+- Modern EdTech dashboard
+- Clean, attractive and professional
+- Student-friendly
+- Responsive on mobile, tablet and desktop
+- Consistent navigation, cards, buttons and icons
+- Use accessible text contrast
+- Include useful empty/loading/error states
+
+TECHNICAL:
+- Use a clean, maintainable component-based structure.
+- Keep data persistent using an appropriate local/database solution.
+- Do not expose API keys in frontend code.
+- Keep the architecture ready for AI/API integration.
+- Do not use fake AI responses.
+- Do not remove or leave unfinished core functionality.
+- Make the app actually functional, not just a visual mockup.
+
+Before finishing, test the main user flows and fix obvious errors.

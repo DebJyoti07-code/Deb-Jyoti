@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "AI-Mavericks"
+description = "A responsive personal study companion for school and college students to plan, focus, organize, and improve their learning with a polished dashboard experience."
+version = "1.0.0"
+id = "artifacts/ai-mavericks"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24893
+
+[services.development]
+run = "pnpm --filter @workspace/ai-mavericks run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ai-mavericks", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ai-mavericks/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24893"
+BASE_PATH = "/"

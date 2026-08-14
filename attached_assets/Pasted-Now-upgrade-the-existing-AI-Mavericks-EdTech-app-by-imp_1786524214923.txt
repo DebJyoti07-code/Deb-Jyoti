@@ -1,0 +1,62 @@
+Now upgrade the existing AI-Mavericks EdTech app by implementing the core AI-powered learning features and final integration.
+
+IMPORTANT:
+Do NOT rebuild the app from scratch.
+Do NOT remove or break any existing feature.
+Keep the current UI, navigation and design system.
+
+1. AI STUDY SUMMARIZER
+- Create an AI Summary section.
+- Allow students to paste study material.
+- Generate a concise student-friendly summary.
+- Organize output into:
+  • Short Summary
+  • Key Points
+  • Important Terms
+  • Quick Revision Points
+- Add Generate, Copy and Clear actions.
+- Show loading and error states.
+- Use a real AI/API integration if configured.
+- If no API key is configured, create the proper secure integration structure and clearly show where configuration is required.
+- Never expose API keys in frontend code.
+
+2. AI WEAK TOPIC DETECTION
+- Analyze available quiz/test performance data and study activity.
+- Identify topics where the student needs more revision.
+- Show:
+  • Subject
+  • Topic
+  • Performance percentage
+  • Priority
+  • Recommended revision action
+- Recommend what the student should study next.
+- Update results when new performance data is available.
+- If insufficient data exists, show "Not enough data" instead of inventing results.
+
+3. PERSONALIZED STUDY RECOMMENDATIONS
+- Use the student's planner, completed tasks and performance data to suggest what they should study next.
+- Give simple actionable recommendations.
+- Prioritize weak topics and unfinished important tasks.
+
+4. FINAL DASHBOARD INTEGRATION
+Improve the dashboard so it clearly shows:
+- Today's tasks
+- Study progress
+- Weak topics
+- Recommended next study topic
+- AI Summary shortcut
+- Pomodoro shortcut
+- Sticky Notes shortcut
+- Motivation Corner
+
+5. FINAL QUALITY CHECK
+- Check all navigation.
+- Check Light/Dark Mode.
+- Check mobile responsiveness.
+- Check forms and buttons.
+- Check data persistence.
+- Fix broken states and obvious bugs.
+- Keep the interface clean and professional.
+- Make the final app suitable for a college hackathon demonstration.
+
+Do not add fake AI functionality or pretend that an API is working when it is not.

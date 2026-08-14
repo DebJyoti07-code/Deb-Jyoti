@@ -1,0 +1,90 @@
+Integrate the Google Gemini API into my existing AI in EduHub web app.
+
+IMPORTANT:
+
+- Do NOT remove or break any existing features.
+- Keep the current UI/design.
+- Do NOT expose the Gemini API key in frontend/client-side code.
+- Use a secure backend/server-side integration.
+- Read the API key from an environment variable named "GEMINI_API_KEY".
+- If the project already has a backend/API structure, reuse it.
+
+AI Features to Add
+
+1. AI Study Assistant
+   Create a chat interface where students can ask academic questions and receive clear, student-friendly explanations from Gemini.
+
+2. AI Study Plan Generator
+   Allow students to enter:
+
+- Subjects
+- Exam date
+- Available study hours
+- Current preparation level
+
+Gemini should generate a realistic personalized study plan.
+
+3. AI Quiz Generator
+   Allow the student to enter a subject/topic and difficulty level.
+
+Gemini should generate:
+
+- MCQs
+- 4 options per question
+- Correct answer
+- Short explanation
+
+4. AI Topic Explainer
+   Add an "Explain with AI" option where students can enter a difficult topic and receive:
+
+- Simple explanation
+- Key points
+- Example
+- Short revision summary
+
+5. AI Progress Insights
+   Use the student's existing progress/streak/quiz data to generate useful study insights.
+
+For example:
+
+- Strong subjects
+- Topics needing improvement
+- Suggested next topic
+- Study consistency feedback
+
+Do NOT allow Gemini to invent progress data. Only provide it with actual data available in the application.
+
+UI/UX
+
+Make the AI features match the existing EduHub design.
+
+Use:
+
+- Modern AI cards
+- Smooth loading animation
+- Typing/loading indicator
+- Clean chat interface
+- Responsive mobile/desktop layout
+- Friendly but professional student-focused design
+
+Error Handling
+
+If Gemini API fails:
+
+- Show a clear user-friendly error message.
+- Do not expose API keys, stack traces, or sensitive backend information.
+- Handle rate limits and empty responses gracefully.
+
+Security
+
+Use "GEMINI_API_KEY" only on the server side.
+
+Do not hardcode the API key anywhere in:
+
+- React components
+- HTML
+- CSS
+- client-side JavaScript
+- GitHub repository
+
+Finally, test all Gemini features and make sure the existing Reward System, Progress Graph, streak system, dashboard, and other existing features continue working.
